@@ -4,7 +4,7 @@ import psycopg2
 from psycopg2.extras import DictCursor
 
 def connect_db():
-    conn = psycopg2.connect('postgres://ktrayavnmlusmc:558695612d4b89acd6cc4fb20c65271d617a9afa500df62a2ac438df35e19abb@ec2-34-230-231-71.compute-1.amazonaws.com:5432/daokuoflpjvhai', cursor_factory=DictCursor)
+    conn = psycopg2.connect('<Enter your URI>', cursor_factory=DictCursor)
     conn.autocommit = True
     sql = conn.cursor()
     return conn, sql
